@@ -1,0 +1,26 @@
+public class Test3_2 {
+	public interface A{
+		public void f();
+	}
+	public abstract class B implements A{
+		private int x;
+		public abstract void g();
+		public B(int x){this.x = x;}
+
+	}
+	public class C extends B{
+		private int y;
+		public C(int x, int y){
+			super(x);
+			this.y = y;
+		}
+		public void f() {
+		}
+		public void g() {
+		}
+	}
+	public static void main(String[]a){
+		System.out.println("Hello World");
+		
+	}
+}

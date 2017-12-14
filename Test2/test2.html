@@ -1,0 +1,29 @@
+
+
+<%
+    User user = session.getAttribute9"user");
+        if(user == null)
+        reesponse.sendRedirect("register");
+%>
+<jsp.useBean id = "user"
+             scope =  "session"
+             class = "edu.stevens.ee552.wenstuff.User"
+></jsp.useBean>
+
+<html>
+<head>
+    <title>Login form</title>
+</head>
+<body>
+<form action = "test1.jsp">
+    First name :<input type = "test" name = "Firstname"><br/>
+    Last name :<input type = "test" name = "lastname"><br/>
+    country: <input type = "test" name = "country"><br/>
+    emai: <input type = "test" name = "email"><br/>
+    phone: <input type = "test" name = "phone"><br/>
+    login: <input type = "submit" name = "Login"><br/>
+</form>
+
+</form>
+</body>
+</html>
